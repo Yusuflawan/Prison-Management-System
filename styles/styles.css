@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* side navigation */
+.side-nav{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #1b1b1b;
+}
+
+.side-nav .logo{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.side-nav .logo .name{
+    margin-top: .3rem;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+.side-nav .logo .role{
+    font-size: 14px;
+    color: #fff;
+}
+
+.side-nav .logo img{
+    border-radius: 4rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.side-nav ul .active {
+    padding-right: 6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 7px;
+    color: #FFFFFF;
+    background-color: #2e2e2e;
+}
+
+.side-nav ul li{
+    margin: 1rem;
+    color: #fff;
+}
+
+.side-nav ul li a{
+    color: #fff;
+    padding-left: .5rem;
+}
+
+.side-nav ul li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.side-nav ul .logout{
+    padding-left: .5rem;
+}
+
+/* dashbpard */
+
+.dashboard,
+.register-inmate{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:100vh;
+}
+
+.dashboard .dashboard-contents{
+    width: 75%;
+    background-color: #f3f3f3;
+}
+
+.dashboard .dashboard-contents .dashboard-text{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 1rem;
+}
+
+.dashboard .dashboard-contents .welcome-text{
+    width: 90%;
+    margin-left: 5%;
+    /* padding: 1rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.dashboard .dashboard-contents .welcome-text p{
+    font-weight: bold;
+}
+
+.dashboard .dashboard-contents .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.dashboard .dashboard-contents .inmate-number,
+.dashboard .dashboard-contents .crime-number,
+.dashboard .dashboard-contents .discharged-number,
+.dashboard .dashboard-contents .visitor-number,
+.dashboard .dashboard-contents .cell-number,
+.dashboard .dashboard-contents .staff-number{
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2.8rem;
+    margin: 1rem;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 16px;
+}
+
+.dashboard .dashboard-contents .inmate-number span,
+.dashboard .dashboard-contents .crime-number span,
+.dashboard .dashboard-contents .discharged-number span,
+.dashboard .dashboard-contents .visitor-number span,
+.dashboard .dashboard-contents .cell-number span,
+.dashboard .dashboard-contents .staff-number span{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.dashboard .dashboard-contents .inmate-number{
+    background-color: #d5caed;
+}
+
+.dashboard .dashboard-contents .crime-number{
+    background-color: #adc5cc;
+}
+
+.dashboard .dashboard-contents .discharged-number{
+    background-color: #b0ae8b;
+}
+
+.dashboard .dashboard-contents .visitor-number{
+    background-color: #fefedf;
+}
+
+.dashboard .dashboard-contents .cell-number{
+    background-color: #bfaca1;
+}
+
+.dashboard .dashboard-contents .staff-number{
+    background-color: #9bc0a4;
+}
+
+
+
+
+/* Inmate */
+.inmate,
+.visitation,
+.crime{
+    display: flex;
+    flex-direction: row;
+}
+
+.inmate .inmate-contents,
+.visitation .visitation-contents,
+.crime .crime-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    background-color: #f3f3f3;
+}
+
+.inmate .inmate-contents .search-inmate,
+.visitation .visitation-contents .search-visitation{
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 10%;
+    height: 5rem;
+}
+
+.inmate .inmate-contents .search-inmate input,
+.visitation .visitation-contents .search-visitation input{
+    width: 15rem;
+    height: 2.2rem;
+    font-size: 14px;
+    outline: none;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border: 1px solid silver;
+    /* border-radius: 8px; */
+    background-color: #fff;
+}
+
+.visitation .visitation-contents .search-visitation label{
+   display: block;
+   margin-left: .5rem;
+   font-size: .8rem;
+}
+
+.visitation .visitation-contents .search-visitation button{
+    padding: .6rem 1rem;
+    height: 2.4rem;
+    border: none;
+    margin-left: -.4rem;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.visitation .visitation-contents .search-visitation button:hover{
+    background-color: #0c0c0c;
+}
+
+.inmate .inmate-list,
+.visitation .visitation-list,
+.crime .crime-list{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.crime .crime-list{
+    margin-top: 8%;
+}
+
+.inmate .inmate-list .title,
+.visitation .visitation-list .title,
+.crime .crime-list .title{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.inmate .inmate-list .title h3,
+.visitation .visitation-list .title h3,
+.crime .crime-list .title h3{
+    flex: 1;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.inmate .inmate-list .title .new-inmate,
+.visitation .visitation-list .title .new-visitation,
+.crime .crime-list .title .new-crime{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.inmate .inmate-list .title button,
+.visitation .visitation-list .title button,
+.crime .crime-list .title button{
+    border: 1px solid silver;
+    width: 9rem;
+    height: 2rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inmate .inmate-list .title button:hover,
+.visitation .visitation-list .title button:hover,
+.crime .crime-list .title button:hover{
+    background-color: #ececec;
+}
+
+.inmate .inmate-list table,
+.visitation .visitation-list table,
+.crime .crime-list table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid silver;
+}
+
+.inmate .inmate-contents .inmate-list thead,
+.visitation .visitation-contents .visitation-list thead,
+.crime .crime-contents .crime-list thead{
+    background-color: #bbc6cb;
+    color: #333;
+}
+
+.inmate .inmate-contents .inmate-list tbody tr:nth-child(even),
+.visitation .visitation-contents .visitation-list tbody tr:nth-child(even),
+.crime .crime-contents .crime-list tbody tr:nth-child(even){
+    background-color: #bbc6cb;
+}
+
+.inmate .inmate-contents .inmate-list tr,
+.visitation .visitation-contents .visitation-list tr,
+.crime .crime-contents .crime-list tr{
+    height: 2rem;
+    width: 100%;
+    border: 1px solid silver;
+}
+
+.inmate .inmate-contents .inmate-list th, td,
+.visitation .visitation-contents .visitation-list th, td,
+.crime .crime-contents .crime-list th, td{
+    border: 1px solid silver;
+    font-size: 14px;
+}
+
+.inmate .inmate-list table tr td button{
+    padding: .2rem .8rem;
+    margin-left: 25%;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    
+}
+
+
+
+/* Register */
+.visitation .register-visitor,
+.inmate .register-inmate,
+.crime .register-crime{
+    display: none;
+margin-left: 35%;
+    width: 75%;
+    height: 140vh;
+    background-color: #f3f3f3;
+}
+
+.visitation .register-visitor form,
+.inmate .register-inmate form,
+.crime .register-crime form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.visitation .register-visitor form h2,
+.inmate .register-inmate form h2,
+.crime .register-crime form h2{
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.visitation .register-visitor form .input-container,
+.inmate .register-inmate form .input-container,
+.crime .register-crime form .input-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visitation .register-visitor form .input-container div,
+.inmate .register-inmate form .input-container div,
+.crime .register-crime form .input-container div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.visitation .register-visitor form .input-container label,
+.inmate .register-inmate form .input-container label,
+.crime .register-crime form .input-container label{
+    font-size: .6rem;
+    margin-left: 2.8rem;
+    margin-bottom: -1.3rem;
+    z-index: 1;
+    display: flex;
+    align-self: flex-start;
+    background-color: #fff;
+}
+
+.visitation .register-visitor form input,
+.visitation .register-visitor form select,
+.inmate .register-inmate form input,
+.inmate .register-inmate form select,
+.crime .register-crime form input{
+    display: block;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid silver;
+    outline: none;
+    border-radius: 5px;
+    font-size: .8rem;
+    padding: .6rem;
+    color: #333;
+}
+
+.visitation .visitation-contents form input,
+.inmate .inmate-contents form input{
+    width: 70%;
+}
+
+.visitation .visitation-contents form select,
+.inmate .inmate-contents form select{
+    width: 75%;
+    cursor: pointer;
+    
+}
+
+.visitation .visitation-contents form input:focus,
+.visitation .visitation-contents form select:focus{
+    border: 1px solid #333;
+}
+
+.inmate .inmate-contents form input:focus,
+.inmate .inmate-contents form select:focus{
+    border: 1px solid #333;
+}
+
+.visitation .visitation-contents form .input-container button,
+.inmate .inmate-contents form .input-container button,
+.crime .crime-contents form .input-container button{
+    width: 75%;
+    margin-bottom: .5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .8rem;
+    background-color: #e2e2e2;
+    transition: background-color 0.2s ease;
+}
+
+.visitation .visitation-contents form .input-container button:hover,
+.inmate .inmate-contents form .input-container button:hover,
+.crime .crime-contents form .input-container button:hover{
+    background-color: #b3b2b2;
+    /* background-color: red; */
+}
+
+.visitation .visitation-contents form .input-container #discard,
+.inmate .inmate-contents form .input-container #discard,
+.crime .crime-contents form .input-container #discard{
+    background-color: #333;
+    color: #fff;
+}
+
+.visitation .visitation-contents form .input-container #discard:hover,
+.inmate .inmate-contents form .input-container #discard:hover,
+.crime .crime-contents form .input-container #discard:hover{
+    background-color: #0c0c0c;
+}
+
+
+
+
+
